@@ -14,7 +14,7 @@ import useAuthStore from '../store/authStore';
 const Navbar = () => {
 	const [searchValue, setSearchValue] = useState('');
 
-	const { userProfile, addUser, removeUser } = useAuthStore();
+	const { userProfile, addUser, removeUser }: any = useAuthStore();
 	const router = useRouter();
 
 	const handleSearch = (e: React.FormEvent) => {
